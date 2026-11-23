@@ -1,5 +1,67 @@
-node_modules
-dist
+# =========================================================================
+# Root .gitignore
+# =========================================================================
+
+# Dependencies & Builds
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Environment Variables & Sensitive Credentials
 .env
+.env.*
+*.env
+!.env.example
+*client_secret*.json
+*credentials*.json
+*token*.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+
+# Python
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Operating System & Editor Files
 .DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+tmp/
+uploads/
+
+# User PDFs & Large Binaries
+*.pdf
+
+# Other local submodules & standalone projects
 messaging_app/
+MockShift/
+Mock_1/
+Mocktest_simulator/
+PhantomMesh-main-backup/
+Temp-Hummidity_IoT/
+anonymous_chatting_website/
+disaster-response-agent/
+esim-tool-manager/
+krishisync-local/
+sp09-spectral/
+render.yaml
+.clangd
+
